@@ -13,4 +13,4 @@ var removeDuplicates = function(nums) {
     return (nums.length);
 };
 
-console.assert(removeDuplicates([1,2,2]) === 2);
+module.exports = removeDuplicates;
