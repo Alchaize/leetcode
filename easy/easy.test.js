@@ -1,5 +1,14 @@
 
 
+const strStr = require('./28implement_strStr');
+test('"hello", "ll" should return 2', () => {
+  expect(strStr("hello", "ll")).toBe(2);
+})
+
+test('"aaaaa", "baa" should return -1', () => {
+  expect(strStr("aaaa", "baa")).toBe(-1);
+})
+
 const removeElements = require('./27removeElements');
 test('Gives ([1, 2, 2], 2). Expects 1', () => {
     expect(removeElements([1,2,2], 2)).toBe(1);
