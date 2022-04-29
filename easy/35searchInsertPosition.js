@@ -5,13 +5,10 @@
  */
  var searchInsert = function(nums, target) {
     var low = 0;
-    var high = nums.length;
+    var high = nums.length-1;
     var p;
-
-    if(target < nums[0]) return 0;
-    if(target > nums[nums.length-1]) return nums.length-1;
     
-    while(low !== high) {
+    while(low <= high) {
         p = Math.floor((low + high) / 2);   
 
         if(nums[p] > target) {
@@ -25,5 +22,4 @@
     return low;
 };
 
-console.log(searchInsert([1,3], 2))
 module.exports = searchInsert;
