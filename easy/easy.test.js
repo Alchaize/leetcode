@@ -1,5 +1,14 @@
 
 
+
+const seachInsert = require('./35searchInsertPosition');
+
+test('nums = [1,3,5,6], target = 5, output 2', () => {
+  expect(seachInsert([1,3,5,6], 5)).toBe(2);
+})
+
+
+
 const strStr = require('./28implement_strStr');
 test('"hello", "ll" should return 2', () => {
   expect(strStr("hello", "ll")).toBe(2);
